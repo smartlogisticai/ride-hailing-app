@@ -15,11 +15,11 @@ import axios from 'axios';
 
 // ── Configuration ─────────────────────────────────────────────────────────────
 
-// 🔗 REPLACE WITH YOUR n8n WEBHOOK URL (or any REST API):
-const N8N_WEBHOOK_URL = 'https://your-n8n-instance.com/webhook/calculate-fare';
+// 🔗 API en servidor Contabo:
+const N8N_WEBHOOK_URL = 'http://167.86.87.109:3001/api/calculate-fare';
 
 // Toggle mock mode (set false when your n8n webhook is ready):
-const USE_MOCK = true;
+const USE_MOCK = false;
 
 // Timeout for real API calls (ms):
 const REQUEST_TIMEOUT = 8000;
