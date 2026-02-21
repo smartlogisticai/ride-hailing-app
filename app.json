@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "RideApp",
+    "slug": "ride-hailing-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#6E3FF3"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourcompany.ridehailing",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show nearby drivers and calculate routes.",
+        "NSLocationAlwaysUsageDescription": "We need your location to track your ride."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6E3FF3"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "com.yourcompany.ridehailing"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow RideApp to use your location."
+        }
+      ]
+    ]
+  }
+}
